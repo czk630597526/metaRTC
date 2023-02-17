@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F70FF4762995EBA4005C60FB"
-               BuildableName = "libmetartccore6_ios.a"
-               BlueprintName = "metartccore6_ios"
-               ReferencedContainer = "container:metartccore6_ios.xcodeproj">
+               BuildableName = "libmetartccore6.a"
+               BlueprintName = "metartccore6"
+               ReferencedContainer = "container:metartccore6.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -51,9 +51,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F70FF4762995EBA4005C60FB"
-            BuildableName = "libmetartccore6_ios.a"
-            BlueprintName = "metartccore6_ios"
-            ReferencedContainer = "container:metartccore6_ios.xcodeproj">
+            BuildableName = "libmetartccore6.a"
+            BlueprintName = "metartccore6"
+            ReferencedContainer = "container:metartccore6.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

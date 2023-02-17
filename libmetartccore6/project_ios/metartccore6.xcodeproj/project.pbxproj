@@ -130,7 +130,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F70FF4772995EBA4005C60FB /* libmetartccore6_ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmetartccore6_ios.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70FF4772995EBA4005C60FB /* libmetartccore6.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmetartccore6.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F70FF4872995EC80005C60FB /* YangZlmConnection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangZlmConnection.c; sourceTree = "<group>"; };
 		F70FF4882995EC80005C60FB /* YangZlmConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangZlmConnection.h; sourceTree = "<group>"; };
 		F70FF48A2995EC80005C60FB /* YangMediaDesc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangMediaDesc.c; sourceTree = "<group>"; };
@@ -349,7 +349,7 @@
 		F70FF4782995EBA4005C60FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F70FF4772995EBA4005C60FB /* libmetartccore6_ios.a */,
+				F70FF4772995EBA4005C60FB /* libmetartccore6.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -645,9 +645,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F70FF4762995EBA4005C60FB /* metartccore6_ios */ = {
+		F70FF4762995EBA4005C60FB /* metartccore6 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F70FF4802995EBA4005C60FB /* Build configuration list for PBXNativeTarget "metartccore6_ios" */;
+			buildConfigurationList = F70FF4802995EBA4005C60FB /* Build configuration list for PBXNativeTarget "metartccore6" */;
 			buildPhases = (
 				F70FF4732995EBA4005C60FB /* Sources */,
 				F70FF4742995EBA4005C60FB /* Frameworks */,
@@ -657,9 +657,9 @@
 			);
 			dependencies = (
 			);
-			name = metartccore6_ios;
+			name = metartccore6;
 			productName = metartccore6_ios;
-			productReference = F70FF4772995EBA4005C60FB /* libmetartccore6_ios.a */;
+			productReference = F70FF4772995EBA4005C60FB /* libmetartccore6.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -676,7 +676,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F70FF4722995EBA4005C60FB /* Build configuration list for PBXProject "metartccore6_ios" */;
+			buildConfigurationList = F70FF4722995EBA4005C60FB /* Build configuration list for PBXProject "metartccore6" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -689,7 +689,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F70FF4762995EBA4005C60FB /* metartccore6_ios */,
+				F70FF4762995EBA4005C60FB /* metartccore6 */,
 			);
 		};
 /* End PBXProject section */
@@ -1031,7 +1031,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F70FF4722995EBA4005C60FB /* Build configuration list for PBXProject "metartccore6_ios" */ = {
+		F70FF4722995EBA4005C60FB /* Build configuration list for PBXProject "metartccore6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F70FF47E2995EBA4005C60FB /* Debug */,
@@ -1040,7 +1040,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F70FF4802995EBA4005C60FB /* Build configuration list for PBXNativeTarget "metartccore6_ios" */ = {
+		F70FF4802995EBA4005C60FB /* Build configuration list for PBXNativeTarget "metartccore6" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F70FF4812995EBA4005C60FB /* Debug */,
