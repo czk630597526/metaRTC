@@ -165,7 +165,7 @@ void yang_timer_start(YangCTimer *timer) {
 
 	}
 #if __APPLE__
-	dispatch_source_set_timer(timer->_timer, DISPATCH_TIME_NOW, 0 * NSEC_PER_MSEC, timer->waitTime * NSEC_PER_MSEC);
+	dispatch_source_set_timer(timer->_timer, DISPATCH_TIME_NOW, timer->waitTime * NSEC_PER_MSEC, timer->waitTime * NSEC_PER_MSEC);
 	dispatch_source_set_event_handler(timer->_timer, ^{
 		yang_run_timer_thread(timer);
 	});
