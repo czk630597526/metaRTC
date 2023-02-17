@@ -1,4 +1,4 @@
-﻿//
+//
 // Copyright (c) 2019-2022 yanggaofeng
 //
 #include <yangutil/sys/YangCTimer.h>
@@ -32,8 +32,12 @@ void g_yang_startWindowsEventTime2(int pwaitTime,YangCTimer *timer)
 }
 #else
 #include <sys/time.h>
-#include <sys/timerfd.h>
-#include <sys/epoll.h>
+	#if __APPLE__
+		#include <pthread.h>
+	#else
+		#include <sys/timerfd.h>
+		#include <sys/epoll.h>
+	#endif
 #endif
 #endif
 #include <fcntl.h>
@@ -54,6 +58,8 @@ void yang_create_timer(YangCTimer *timer, void *user, int32_t taskId,
     timer->hTimerQueue=NULL;
     timer->hTimerQueueTimer=NULL;
     timer->winEvent=CreateEvent(NULL,TRUE,FALSE,NULL);
+#elif __APPLE__
+	timer->_timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(0, 0));
 #else
     timer->timerfd = timerfd_create(CLOCK_REALTIME, 0);//TFD_NONBLOCK | TFD_CLOEXEC);
     timer->efd = -1;
@@ -104,6 +110,8 @@ void* yang_run_timer_thread(void *obj) {
 
     CloseHandle(timer->winEvent);
     timer->winEvent=NULL;
+	#elif __APPLE__
+		
     #else
 	struct itimerspec itimer;
 	itimer.it_value.tv_sec = timer->waitTime / 1000;
@@ -156,7 +164,14 @@ void yang_timer_start(YangCTimer *timer) {
 		yang_error("YangThread::start could not start thread");
 
 	}
-
+#if __APPLE__
+	dispatch_source_set_timer(timer->_timer, DISPATCH_TIME_NOW, 0 * NSEC_PER_MSEC, timer->waitTime * NSEC_PER_MSEC);
+	dispatch_source_set_event_handler(timer->_timer, ^{
+		yang_run_timer_thread(timer);
+	});
+	//dispatch_set_context(timer->_timer, void * _Nullable context);
+	dispatch_resume(timer->_timer);
+#endif
 }
 void yang_timer_stop(YangCTimer *timer) {
 	if (timer == NULL||timer->isStart==0)
@@ -185,6 +200,8 @@ void yang_timer_stop(YangCTimer *timer) {
     timer->hTimerQueue = NULL;
     SetEvent(timer->winEvent);
      while (timer->isStart)			yang_usleep(1000);
+	#elif __APPLE__
+		dispatch_source_cancel(timer->_timer);
     #else
      while (timer->isStart)			yang_usleep(1000);
 	epoll_ctl(timer->efd, EPOLL_CTL_DEL, timer->timerfd, NULL);

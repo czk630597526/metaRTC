@@ -1,15 +1,19 @@
-﻿//
+//
 // Copyright (c) 2019-2022 yanggaofeng
 //
 #ifndef SRC_YANGUTIL_SRC_YANGCTIMER_H_
 #define SRC_YANGUTIL_SRC_YANGCTIMER_H_
+
 #include <yangutil/yangtype.h>
 #include <stdint.h>
 #include <yangutil/sys/YangThread.h>
+
 #ifdef _WIN32
-#define Yang_Enable_Timer_Phtread 0
+	#define Yang_Enable_Timer_Phtread 0
+#elif __APPLE__
+	#import <dispatch/source.h>
 #else
-#define Yang_Enable_Timer_Phtread 0
+	#define Yang_Enable_Timer_Phtread 0
 #endif
 
 typedef struct YangCTimer{
@@ -28,6 +32,8 @@ typedef struct YangCTimer{
         HANDLE	hTimerQueue;
         HANDLE	hTimerQueueTimer;
         HANDLE  winEvent;
+	#elif __APPLE__
+		dispatch_source_t _timer;
     #else
         int32_t timerfd;
         int32_t efd;

@@ -24,7 +24,6 @@
 		F70FF55A2995ECDE005C60FB /* YangSctp.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF53F2995EC81005C60FB /* YangSctp.c */; };
 		F70FF55B2995ECDE005C60FB /* YangSsrc.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5402995EC81005C60FB /* YangSsrc.c */; };
 		F70FF55C2995ECDE005C60FB /* YangCString.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5412995EC81005C60FB /* YangCString.c */; };
-		F70FF55D2995ECDE005C60FB /* YangAmf.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5422995EC81005C60FB /* YangAmf.c */; };
 		F70FF55E2995ECDE005C60FB /* YangWebsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5432995EC81005C60FB /* YangWebsocket.c */; };
 		F70FF55F2995ECDE005C60FB /* YangSocketIP.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5442995EC81005C60FB /* YangSocketIP.c */; };
 		F70FF5602995ECDE005C60FB /* YangMath.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5452995EC81005C60FB /* YangMath.c */; };
@@ -308,7 +307,6 @@
 		F70FF53F2995EC81005C60FB /* YangSctp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSctp.c; sourceTree = "<group>"; };
 		F70FF5402995EC81005C60FB /* YangSsrc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSsrc.c; sourceTree = "<group>"; };
 		F70FF5412995EC81005C60FB /* YangCString.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangCString.c; sourceTree = "<group>"; };
-		F70FF5422995EC81005C60FB /* YangAmf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangAmf.c; sourceTree = "<group>"; };
 		F70FF5432995EC81005C60FB /* YangWebsocket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangWebsocket.c; sourceTree = "<group>"; };
 		F70FF5442995EC81005C60FB /* YangSocketIP.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSocketIP.c; sourceTree = "<group>"; };
 		F70FF5452995EC81005C60FB /* YangMath.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangMath.c; sourceTree = "<group>"; };
@@ -625,7 +623,6 @@
 				F70FF53F2995EC81005C60FB /* YangSctp.c */,
 				F70FF5402995EC81005C60FB /* YangSsrc.c */,
 				F70FF5412995EC81005C60FB /* YangCString.c */,
-				F70FF5422995EC81005C60FB /* YangAmf.c */,
 				F70FF5432995EC81005C60FB /* YangWebsocket.c */,
 				F70FF5442995EC81005C60FB /* YangSocketIP.c */,
 				F70FF5452995EC81005C60FB /* YangMath.c */,
@@ -806,7 +803,6 @@
 				F70FF55B2995ECDE005C60FB /* YangSsrc.c in Sources */,
 				F70FF60729962794005C60FB /* YangSslMbedtls.c in Sources */,
 				F70FF55C2995ECDE005C60FB /* YangCString.c in Sources */,
-				F70FF55D2995ECDE005C60FB /* YangAmf.c in Sources */,
 				F70FF55E2995ECDE005C60FB /* YangWebsocket.c in Sources */,
 				F70FF55F2995ECDE005C60FB /* YangSocketIP.c in Sources */,
 				F70FF5602995ECDE005C60FB /* YangMath.c in Sources */,
