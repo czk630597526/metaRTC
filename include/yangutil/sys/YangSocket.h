@@ -1,4 +1,4 @@
-﻿//
+//
 // Copyright (c) 2019-2022 yanggaofeng
 //
 #ifndef YANGSOCKETUTIL_H_
@@ -20,7 +20,14 @@
 #else
 #include <netinet/in.h>
 #include <errno.h>
-#define yang_be32toh be32toh
+	#if __APPLE__
+		#include <TargetConditionals.h>
+		#if TARGET_OS_IPHONE
+			#define yang_be32toh OSSwapBigToHostInt32
+		#else
+			#define yang_be32toh be32toh
+		#endif
+	#endif
 #define yang_poll poll
 #define GetSockError()	errno
 #define YANG_NO_SIGNAL MSG_NOSIGNAL

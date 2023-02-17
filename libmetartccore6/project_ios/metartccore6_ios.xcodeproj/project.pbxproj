@@ -1,0 +1,1059 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F70FF54C2995ECDE005C60FB /* YangVector.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5302995EC81005C60FB /* YangVector.c */; };
+		F70FF54D2995ECDE005C60FB /* YangFile.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5312995EC81005C60FB /* YangFile.c */; };
+		F70FF54E2995ECDE005C60FB /* YangLibHandle.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5322995EC81005C60FB /* YangLibHandle.c */; };
+		F70FF54F2995ECDE005C60FB /* YangHttpSocket.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5332995EC81005C60FB /* YangHttpSocket.c */; };
+		F70FF5502995ECDE005C60FB /* YangSocket.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5342995EC81005C60FB /* YangSocket.c */; };
+		F70FF5512995ECDE005C60FB /* YangIni.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5362995EC81005C60FB /* YangIni.c */; };
+		F70FF5522995ECDE005C60FB /* YangThread.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5372995EC81005C60FB /* YangThread.c */; };
+		F70FF5532995ECDE005C60FB /* YangBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5382995EC81005C60FB /* YangBuffer.c */; };
+		F70FF5542995ECDE005C60FB /* YangAvtype.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5392995EC81005C60FB /* YangAvtype.c */; };
+		F70FF5552995ECDE005C60FB /* YangUrl.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF53A2995EC81005C60FB /* YangUrl.c */; };
+		F70FF5562995ECDE005C60FB /* YangTime.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF53B2995EC81005C60FB /* YangTime.c */; };
+		F70FF5572995ECDE005C60FB /* YangSRtp.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF53C2995EC81005C60FB /* YangSRtp.c */; };
+		F70FF5582995ECDE005C60FB /* YangEndian.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF53D2995EC81005C60FB /* YangEndian.c */; };
+		F70FF5592995ECDE005C60FB /* YangCTimer.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF53E2995EC81005C60FB /* YangCTimer.c */; };
+		F70FF55A2995ECDE005C60FB /* YangSctp.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF53F2995EC81005C60FB /* YangSctp.c */; };
+		F70FF55B2995ECDE005C60FB /* YangSsrc.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5402995EC81005C60FB /* YangSsrc.c */; };
+		F70FF55C2995ECDE005C60FB /* YangCString.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5412995EC81005C60FB /* YangCString.c */; };
+		F70FF55D2995ECDE005C60FB /* YangAmf.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5422995EC81005C60FB /* YangAmf.c */; };
+		F70FF55E2995ECDE005C60FB /* YangWebsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5432995EC81005C60FB /* YangWebsocket.c */; };
+		F70FF55F2995ECDE005C60FB /* YangSocketIP.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5442995EC81005C60FB /* YangSocketIP.c */; };
+		F70FF5602995ECDE005C60FB /* YangMath.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5452995EC81005C60FB /* YangMath.c */; };
+		F70FF5612995ECDE005C60FB /* YangCLog.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5462995EC81005C60FB /* YangCLog.c */; };
+		F70FF5622995ED1E005C60FB /* YangConvert.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5192995EC81005C60FB /* YangConvert.c */; };
+		F70FF5632995ED1E005C60FB /* YangPreProcess.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF51A2995EC81005C60FB /* YangPreProcess.c */; };
+		F70FF5642995ED1E005C60FB /* YangRtcAec.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF51B2995EC81005C60FB /* YangRtcAec.c */; };
+		F70FF5652995ED1E005C60FB /* YangMeta.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF51C2995EC81005C60FB /* YangMeta.c */; };
+		F70FF5662995ED1E005C60FB /* YangSpspps.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF51D2995EC81005C60FB /* YangSpspps.c */; };
+		F70FF5672995ED1E005C60FB /* YangAudioMix.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF51E2995EC81005C60FB /* YangAudioMix.c */; };
+		F70FF5682995ED1E005C60FB /* YangYuvUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF51F2995EC81005C60FB /* YangYuvUtil.c */; };
+		F70FF5692995ED1E005C60FB /* YangResample.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5202995EC81005C60FB /* YangResample.c */; };
+		F70FF56A2995ED1E005C60FB /* YangNalu.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5212995EC81005C60FB /* YangNalu.c */; };
+		F70FF56B2995ED1E005C60FB /* YangAudioUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5222995EC81005C60FB /* YangAudioUtil.c */; };
+		F70FF56C2995ED1E005C60FB /* YangRtcStun.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4A22995EC80005C60FB /* YangRtcStun.c */; };
+		F70FF56E2995ED1E005C60FB /* YangIce.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4A42995EC80005C60FB /* YangIce.c */; };
+		F70FF5702995ED1E005C60FB /* YangTurnConnection.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4A62995EC80005C60FB /* YangTurnConnection.c */; };
+		F70FF5722995ED1E005C60FB /* YangRtcSocket.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4A82995EC80005C60FB /* YangRtcSocket.c */; };
+		F70FF5752995ED1E005C60FB /* YangP2pConnection.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5142995EC81005C60FB /* YangP2pConnection.c */; };
+		F70FF5762995ED1E005C60FB /* YangP2pServer.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5152995EC81005C60FB /* YangP2pServer.c */; };
+		F70FF5772995ED1E005C60FB /* YangP2pConnection2.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5162995EC81005C60FB /* YangP2pConnection2.c */; };
+		F70FF5792995ED1E005C60FB /* YangPlayTrackAudio.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4AB2995EC81005C60FB /* YangPlayTrackAudio.c */; };
+		F70FF57D2995ED1E005C60FB /* YangBandwidth.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4AF2995EC81005C60FB /* YangBandwidth.c */; };
+		F70FF57E2995ED1E005C60FB /* YangPushAudio.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4B02995EC81005C60FB /* YangPushAudio.c */; };
+		F70FF5802995ED1E005C60FB /* YangPushH265.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4B22995EC81005C60FB /* YangPushH265.c */; };
+		F70FF5822995ED1E005C60FB /* YangRtcConnection.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4B42995EC81005C60FB /* YangRtcConnection.c */; };
+		F70FF5832995ED1E005C60FB /* YangPlayTrackH265.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4B52995EC81005C60FB /* YangPlayTrackH265.c */; };
+		F70FF5852995ED1E005C60FB /* YangPlayStream.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4B72995EC81005C60FB /* YangPlayStream.c */; };
+		F70FF5882995ED1E005C60FB /* YangRtcTwcc.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4BA2995EC81005C60FB /* YangRtcTwcc.c */; };
+		F70FF5892995ED1E005C60FB /* YangDatachannel.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4BB2995EC81005C60FB /* YangDatachannel.c */; };
+		F70FF58D2995ED1E005C60FB /* YangPushStream.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4BF2995EC81005C60FB /* YangPushStream.c */; };
+		F70FF58E2995ED1E005C60FB /* YangPush.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4C02995EC81005C60FB /* YangPush.c */; };
+		F70FF58F2995ED1E005C60FB /* YangPlayTrackH264.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4C12995EC81005C60FB /* YangPlayTrackH264.c */; };
+		F70FF5922995ED1E005C60FB /* YangMetaConnection.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4C42995EC81005C60FB /* YangMetaConnection.c */; };
+		F70FF5962995ED1E005C60FB /* YangRtcContext.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4C82995EC81005C60FB /* YangRtcContext.c */; };
+		F70FF5992995ED1E005C60FB /* YangPlayTrackVideo.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4CB2995EC81005C60FB /* YangPlayTrackVideo.c */; };
+		F70FF59E2995ED1E005C60FB /* YangRtcRtcp.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4D02995EC81005C60FB /* YangRtcRtcp.c */; };
+		F70FF59F2995ED1E005C60FB /* YangPeerConnection.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4D12995EC81005C60FB /* YangPeerConnection.c */; };
+		F70FF5A02995ED1E005C60FB /* YangRtcStats.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4D22995EC81005C60FB /* YangRtcStats.c */; };
+		F70FF5A32995ED1E005C60FB /* YangStreamUrl.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4D52995EC81005C60FB /* YangStreamUrl.c */; };
+		F70FF5A42995ED1E005C60FB /* YangPlayTrack.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4D62995EC81005C60FB /* YangPlayTrack.c */; };
+		F70FF5A52995ED1E005C60FB /* YangPushH264.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4D72995EC81005C60FB /* YangPushH264.c */; };
+		F70FF5A62995ED1E005C60FB /* YangAec.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4D82995EC81005C60FB /* YangAec.c */; };
+		F70FF5A92995ED1E005C60FB /* YangRtcpNack.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4DF2995EC81005C60FB /* YangRtcpNack.c */; };
+		F70FF5AA2995ED1E005C60FB /* YangRtpPacket.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4E02995EC81005C60FB /* YangRtpPacket.c */; };
+		F70FF5AD2995ED1E005C60FB /* YangRtpFUAPayload.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4E32995EC81005C60FB /* YangRtpFUAPayload.c */; };
+		F70FF5B12995ED1E005C60FB /* YangRtpSTAPPayload.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4E72995EC81005C60FB /* YangRtpSTAPPayload.c */; };
+		F70FF5B42995ED1E005C60FB /* YangRtpBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4EA2995EC81005C60FB /* YangRtpBuffer.c */; };
+		F70FF5B52995ED1E005C60FB /* YangRtcpCompound.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4EB2995EC81005C60FB /* YangRtcpCompound.c */; };
+		F70FF5B62995ED1E005C60FB /* YangRtcpPsfbCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4EC2995EC81005C60FB /* YangRtcpPsfbCommon.c */; };
+		F70FF5BD2995ED1E005C60FB /* YangRtcpCommon.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4F32995EC81005C60FB /* YangRtcpCommon.c */; };
+		F70FF5BF2995ED1E005C60FB /* YangRtpFUAPayload2.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4F52995EC81005C60FB /* YangRtpFUAPayload2.c */; };
+		F70FF5C02995ED1E005C60FB /* YangRtcpTWCC.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4F62995EC81005C60FB /* YangRtcpTWCC.c */; };
+		F70FF5C12995ED1E005C60FB /* YangRtcpApp.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4F72995EC81005C60FB /* YangRtcpApp.c */; };
+		F70FF5C32995ED1E005C60FB /* YangReceiveNackBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4F92995EC81005C60FB /* YangReceiveNackBuffer.c */; };
+		F70FF5C52995ED1E005C60FB /* YangRtcpRpsi.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4FB2995EC81005C60FB /* YangRtcpRpsi.c */; };
+		F70FF5C62995ED1E005C60FB /* YangRtp.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4FC2995EC81005C60FB /* YangRtp.c */; };
+		F70FF5C82995ED1E005C60FB /* YangRtpHeader.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4FE2995EC81005C60FB /* YangRtpHeader.c */; };
+		F70FF5C92995ED1E005C60FB /* YangRtcpSR.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4FF2995EC81005C60FB /* YangRtcpSR.c */; };
+		F70FF5CC2995ED1E005C60FB /* YangRtcpPli.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5022995EC81005C60FB /* YangRtcpPli.c */; };
+		F70FF5CD2995ED1E005C60FB /* YangRtpRawPayload.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5032995EC81005C60FB /* YangRtpRawPayload.c */; };
+		F70FF5CF2995ED1E005C60FB /* YangRtpRecvNack.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5052995EC81005C60FB /* YangRtpRecvNack.c */; };
+		F70FF5D02995ED1E005C60FB /* YangRtcpRR.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5062995EC81005C60FB /* YangRtcpRR.c */; };
+		F70FF5D22995ED1E005C60FB /* YangRtcpSli.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5082995EC81005C60FB /* YangRtcpSli.c */; };
+		F70FF5D42995ED1E005C60FB /* YangRtcpBye.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF50A2995EC81005C60FB /* YangRtcpBye.c */; };
+		F70FF5D62995ED1E005C60FB /* YangPublishNackBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF50C2995EC81005C60FB /* YangPublishNackBuffer.c */; };
+		F70FF5D72995ED1E005C60FB /* YangRtcpXr.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF50D2995EC81005C60FB /* YangRtcpXr.c */; };
+		F70FF5DB2995ED1E005C60FB /* YangRtcp.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5112995EC81005C60FB /* YangRtcp.c */; };
+		F70FF5DC2995ED1E005C60FB /* YangMediaDesc.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF48A2995EC80005C60FB /* YangMediaDesc.c */; };
+		F70FF5DD2995ED1E005C60FB /* YangSSRCInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF48B2995EC80005C60FB /* YangSSRCInfo.c */; };
+		F70FF5DE2995ED1E005C60FB /* YangSdp.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF48C2995EC80005C60FB /* YangSdp.c */; };
+		F70FF5E02995ED1E005C60FB /* YangAudioPayload.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF48E2995EC80005C60FB /* YangAudioPayload.c */; };
+		F70FF5E12995ED1E005C60FB /* YangAnswerSdp.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF48F2995EC80005C60FB /* YangAnswerSdp.c */; };
+		F70FF5E32995ED1E005C60FB /* YangRtxPayloadDes.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4912995EC80005C60FB /* YangRtxPayloadDes.c */; };
+		F70FF5E42995ED1E005C60FB /* YangRtcSdp.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4922995EC80005C60FB /* YangRtcSdp.c */; };
+		F70FF5E62995ED1E005C60FB /* YangRedPayload.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4942995EC80005C60FB /* YangRedPayload.c */; };
+		F70FF5ED2995ED1E005C60FB /* YangSdpHandle.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF49B2995EC80005C60FB /* YangSdpHandle.c */; };
+		F70FF5EF2995ED1E005C60FB /* YangCodecPayload.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF49D2995EC80005C60FB /* YangCodecPayload.c */; };
+		F70FF5F12995ED1E005C60FB /* YangMediaPayloadType.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF49F2995EC80005C60FB /* YangMediaPayloadType.c */; };
+		F70FF5F42995ED1E005C60FB /* YangSrsConnection.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4DD2995EC81005C60FB /* YangSrsConnection.c */; };
+		F70FF5F52995ED1E005C60FB /* YangDtlsMbedtls.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5242995EC81005C60FB /* YangDtlsMbedtls.c */; };
+		F70FF5F82995ED1E005C60FB /* YangSslOpenssl.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5272995EC81005C60FB /* YangSslOpenssl.c */; };
+		F70FF5F92995ED1E005C60FB /* YangDtlsOpenssl.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5282995EC81005C60FB /* YangDtlsOpenssl.c */; };
+		F70FF5FB2995ED1E005C60FB /* YangStream.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF52B2995EC81005C60FB /* YangStream.c */; };
+		F70FF5FC2995ED1E005C60FB /* YangStreamCapture.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF52C2995EC81005C60FB /* YangStreamCapture.c */; };
+		F70FF5FD2995ED1E005C60FB /* YangStreamRtc.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF52D2995EC81005C60FB /* YangStreamRtc.c */; };
+		F70FF5FF2995ED1E005C60FB /* YangSortBuffer.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5482995EC82005C60FB /* YangSortBuffer.c */; };
+		F70FF6002995ED1E005C60FB /* YangMediaBuffer2.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5492995EC82005C60FB /* YangMediaBuffer2.c */; };
+		F70FF6022995ED1E005C60FB /* YangVideoEncoderBuffer2.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF54B2995EC82005C60FB /* YangVideoEncoderBuffer2.c */; };
+		F70FF6032995ED1E005C60FB /* YangZlmConnection.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF4872995EC80005C60FB /* YangZlmConnection.c */; };
+		F70FF60729962794005C60FB /* YangSslMbedtls.c in Sources */ = {isa = PBXBuildFile; fileRef = F70FF5252995EC81005C60FB /* YangSslMbedtls.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F70FF4752995EBA4005C60FB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F70FF4772995EBA4005C60FB /* libmetartccore6_ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmetartccore6_ios.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F70FF4872995EC80005C60FB /* YangZlmConnection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangZlmConnection.c; sourceTree = "<group>"; };
+		F70FF4882995EC80005C60FB /* YangZlmConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangZlmConnection.h; sourceTree = "<group>"; };
+		F70FF48A2995EC80005C60FB /* YangMediaDesc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangMediaDesc.c; sourceTree = "<group>"; };
+		F70FF48B2995EC80005C60FB /* YangSSRCInfo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSSRCInfo.c; sourceTree = "<group>"; };
+		F70FF48C2995EC80005C60FB /* YangSdp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSdp.c; sourceTree = "<group>"; };
+		F70FF48D2995EC80005C60FB /* YangSdpHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangSdpHandle.h; sourceTree = "<group>"; };
+		F70FF48E2995EC80005C60FB /* YangAudioPayload.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangAudioPayload.c; sourceTree = "<group>"; };
+		F70FF48F2995EC80005C60FB /* YangAnswerSdp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangAnswerSdp.c; sourceTree = "<group>"; };
+		F70FF4902995EC80005C60FB /* YangCodecPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangCodecPayload.h; sourceTree = "<group>"; };
+		F70FF4912995EC80005C60FB /* YangRtxPayloadDes.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtxPayloadDes.c; sourceTree = "<group>"; };
+		F70FF4922995EC80005C60FB /* YangRtcSdp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcSdp.c; sourceTree = "<group>"; };
+		F70FF4932995EC80005C60FB /* YangMediaPayloadType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangMediaPayloadType.h; sourceTree = "<group>"; };
+		F70FF4942995EC80005C60FB /* YangRedPayload.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRedPayload.c; sourceTree = "<group>"; };
+		F70FF4952995EC80005C60FB /* YangSdpType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangSdpType.h; sourceTree = "<group>"; };
+		F70FF4962995EC80005C60FB /* YangSdp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangSdp.h; sourceTree = "<group>"; };
+		F70FF4972995EC80005C60FB /* YangSSRCInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangSSRCInfo.h; sourceTree = "<group>"; };
+		F70FF4982995EC80005C60FB /* YangMediaDesc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangMediaDesc.h; sourceTree = "<group>"; };
+		F70FF4992995EC80005C60FB /* YangAnswerSdp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangAnswerSdp.h; sourceTree = "<group>"; };
+		F70FF49A2995EC80005C60FB /* YangAudioPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangAudioPayload.h; sourceTree = "<group>"; };
+		F70FF49B2995EC80005C60FB /* YangSdpHandle.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSdpHandle.c; sourceTree = "<group>"; };
+		F70FF49C2995EC80005C60FB /* YangRtxPayloadDes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtxPayloadDes.h; sourceTree = "<group>"; };
+		F70FF49D2995EC80005C60FB /* YangCodecPayload.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangCodecPayload.c; sourceTree = "<group>"; };
+		F70FF49E2995EC80005C60FB /* YangRedPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRedPayload.h; sourceTree = "<group>"; };
+		F70FF49F2995EC80005C60FB /* YangMediaPayloadType.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangMediaPayloadType.c; sourceTree = "<group>"; };
+		F70FF4A02995EC80005C60FB /* YangRtcSdp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcSdp.h; sourceTree = "<group>"; };
+		F70FF4A22995EC80005C60FB /* YangRtcStun.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcStun.c; sourceTree = "<group>"; };
+		F70FF4A32995EC80005C60FB /* YangTurnConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangTurnConnection.h; sourceTree = "<group>"; };
+		F70FF4A42995EC80005C60FB /* YangIce.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangIce.c; sourceTree = "<group>"; };
+		F70FF4A52995EC80005C60FB /* YangRtcSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcSocket.h; sourceTree = "<group>"; };
+		F70FF4A62995EC80005C60FB /* YangTurnConnection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangTurnConnection.c; sourceTree = "<group>"; };
+		F70FF4A72995EC80005C60FB /* YangRtcStun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcStun.h; sourceTree = "<group>"; };
+		F70FF4A82995EC80005C60FB /* YangRtcSocket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcSocket.c; sourceTree = "<group>"; };
+		F70FF4A92995EC80005C60FB /* YangIce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangIce.h; sourceTree = "<group>"; };
+		F70FF4AB2995EC81005C60FB /* YangPlayTrackAudio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangPlayTrackAudio.c; sourceTree = "<group>"; };
+		F70FF4AC2995EC81005C60FB /* YangPlayTrackH264.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPlayTrackH264.h; sourceTree = "<group>"; };
+		F70FF4AD2995EC81005C60FB /* YangPush.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPush.h; sourceTree = "<group>"; };
+		F70FF4AE2995EC81005C60FB /* YangPushStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPushStream.h; sourceTree = "<group>"; };
+		F70FF4AF2995EC81005C60FB /* YangBandwidth.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangBandwidth.c; sourceTree = "<group>"; };
+		F70FF4B02995EC81005C60FB /* YangPushAudio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangPushAudio.c; sourceTree = "<group>"; };
+		F70FF4B12995EC81005C60FB /* YangRtcContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcContext.h; sourceTree = "<group>"; };
+		F70FF4B22995EC81005C60FB /* YangPushH265.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangPushH265.c; sourceTree = "<group>"; };
+		F70FF4B32995EC81005C60FB /* YangRtcRtcp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcRtcp.h; sourceTree = "<group>"; };
+		F70FF4B42995EC81005C60FB /* YangRtcConnection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcConnection.c; sourceTree = "<group>"; };
+		F70FF4B52995EC81005C60FB /* YangPlayTrackH265.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangPlayTrackH265.c; sourceTree = "<group>"; };
+		F70FF4B62995EC81005C60FB /* YangPlayTrackVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPlayTrackVideo.h; sourceTree = "<group>"; };
+		F70FF4B72995EC81005C60FB /* YangPlayStream.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangPlayStream.c; sourceTree = "<group>"; };
+		F70FF4B82995EC81005C60FB /* YangPlayTrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPlayTrack.h; sourceTree = "<group>"; };
+		F70FF4B92995EC81005C60FB /* YangPushH264.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPushH264.h; sourceTree = "<group>"; };
+		F70FF4BA2995EC81005C60FB /* YangRtcTwcc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcTwcc.c; sourceTree = "<group>"; };
+		F70FF4BB2995EC81005C60FB /* YangDatachannel.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangDatachannel.c; sourceTree = "<group>"; };
+		F70FF4BC2995EC81005C60FB /* YangPushH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPushH.h; sourceTree = "<group>"; };
+		F70FF4BD2995EC81005C60FB /* YangStreamUrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangStreamUrl.h; sourceTree = "<group>"; };
+		F70FF4BE2995EC81005C60FB /* YangRtcStats.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcStats.h; sourceTree = "<group>"; };
+		F70FF4BF2995EC81005C60FB /* YangPushStream.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangPushStream.c; sourceTree = "<group>"; };
+		F70FF4C02995EC81005C60FB /* YangPush.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangPush.c; sourceTree = "<group>"; };
+		F70FF4C12995EC81005C60FB /* YangPlayTrackH264.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangPlayTrackH264.c; sourceTree = "<group>"; };
+		F70FF4C22995EC81005C60FB /* YangRtcContextH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcContextH.h; sourceTree = "<group>"; };
+		F70FF4C32995EC81005C60FB /* YangPlayTrackAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPlayTrackAudio.h; sourceTree = "<group>"; };
+		F70FF4C42995EC81005C60FB /* YangMetaConnection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangMetaConnection.c; sourceTree = "<group>"; };
+		F70FF4C52995EC81005C60FB /* YangPushH265.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPushH265.h; sourceTree = "<group>"; };
+		F70FF4C62995EC81005C60FB /* YangPushAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPushAudio.h; sourceTree = "<group>"; };
+		F70FF4C72995EC81005C60FB /* YangBandwidth.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangBandwidth.h; sourceTree = "<group>"; };
+		F70FF4C82995EC81005C60FB /* YangRtcContext.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcContext.c; sourceTree = "<group>"; };
+		F70FF4C92995EC81005C60FB /* YangPlayStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPlayStream.h; sourceTree = "<group>"; };
+		F70FF4CA2995EC81005C60FB /* YangPlayTrackH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPlayTrackH.h; sourceTree = "<group>"; };
+		F70FF4CB2995EC81005C60FB /* YangPlayTrackVideo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangPlayTrackVideo.c; sourceTree = "<group>"; };
+		F70FF4CC2995EC81005C60FB /* YangPlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPlay.h; sourceTree = "<group>"; };
+		F70FF4CD2995EC81005C60FB /* YangPlayTrackH265.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPlayTrackH265.h; sourceTree = "<group>"; };
+		F70FF4CE2995EC81005C60FB /* YangPushStreamH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPushStreamH.h; sourceTree = "<group>"; };
+		F70FF4CF2995EC81005C60FB /* YangRtcConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcConnection.h; sourceTree = "<group>"; };
+		F70FF4D02995EC81005C60FB /* YangRtcRtcp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcRtcp.c; sourceTree = "<group>"; };
+		F70FF4D12995EC81005C60FB /* YangPeerConnection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangPeerConnection.c; sourceTree = "<group>"; };
+		F70FF4D22995EC81005C60FB /* YangRtcStats.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcStats.c; sourceTree = "<group>"; };
+		F70FF4D32995EC81005C60FB /* YangDatachannel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangDatachannel.h; sourceTree = "<group>"; };
+		F70FF4D42995EC81005C60FB /* YangRtcTwcc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcTwcc.h; sourceTree = "<group>"; };
+		F70FF4D52995EC81005C60FB /* YangStreamUrl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangStreamUrl.c; sourceTree = "<group>"; };
+		F70FF4D62995EC81005C60FB /* YangPlayTrack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangPlayTrack.c; sourceTree = "<group>"; };
+		F70FF4D72995EC81005C60FB /* YangPushH264.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangPushH264.c; sourceTree = "<group>"; };
+		F70FF4D82995EC81005C60FB /* YangAec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangAec.c; sourceTree = "<group>"; };
+		F70FF4D92995EC81005C60FB /* YangRtcSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcSession.h; sourceTree = "<group>"; };
+		F70FF4DA2995EC81005C60FB /* YangRtcStream.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcStream.h; sourceTree = "<group>"; };
+		F70FF4DC2995EC81005C60FB /* YangSrsConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangSrsConnection.h; sourceTree = "<group>"; };
+		F70FF4DD2995EC81005C60FB /* YangSrsConnection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSrsConnection.c; sourceTree = "<group>"; };
+		F70FF4DF2995EC81005C60FB /* YangRtcpNack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcpNack.c; sourceTree = "<group>"; };
+		F70FF4E02995EC81005C60FB /* YangRtpPacket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtpPacket.c; sourceTree = "<group>"; };
+		F70FF4E12995EC81005C60FB /* YangRtcpSR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcpSR.h; sourceTree = "<group>"; };
+		F70FF4E22995EC81005C60FB /* YangRtpHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtpHeader.h; sourceTree = "<group>"; };
+		F70FF4E32995EC81005C60FB /* YangRtpFUAPayload.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtpFUAPayload.c; sourceTree = "<group>"; };
+		F70FF4E42995EC81005C60FB /* YangRtp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtp.h; sourceTree = "<group>"; };
+		F70FF4E52995EC81005C60FB /* YangRtcpRpsi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcpRpsi.h; sourceTree = "<group>"; };
+		F70FF4E62995EC81005C60FB /* YangReceiveNackBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangReceiveNackBuffer.h; sourceTree = "<group>"; };
+		F70FF4E72995EC81005C60FB /* YangRtpSTAPPayload.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtpSTAPPayload.c; sourceTree = "<group>"; };
+		F70FF4E82995EC81005C60FB /* YangRtcpBye.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcpBye.h; sourceTree = "<group>"; };
+		F70FF4E92995EC81005C60FB /* YangRtcpSli.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcpSli.h; sourceTree = "<group>"; };
+		F70FF4EA2995EC81005C60FB /* YangRtpBuffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtpBuffer.c; sourceTree = "<group>"; };
+		F70FF4EB2995EC81005C60FB /* YangRtcpCompound.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcpCompound.c; sourceTree = "<group>"; };
+		F70FF4EC2995EC81005C60FB /* YangRtcpPsfbCommon.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcpPsfbCommon.c; sourceTree = "<group>"; };
+		F70FF4ED2995EC81005C60FB /* YangRtpRawPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtpRawPayload.h; sourceTree = "<group>"; };
+		F70FF4EE2995EC81005C60FB /* YangRtcpPli.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcpPli.h; sourceTree = "<group>"; };
+		F70FF4EF2995EC81005C60FB /* YangRtcpRR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcpRR.h; sourceTree = "<group>"; };
+		F70FF4F02995EC81005C60FB /* YangRtpRecvNack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtpRecvNack.h; sourceTree = "<group>"; };
+		F70FF4F12995EC81005C60FB /* YangPublishNackBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangPublishNackBuffer.h; sourceTree = "<group>"; };
+		F70FF4F22995EC81005C60FB /* YangRtpConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtpConstant.h; sourceTree = "<group>"; };
+		F70FF4F32995EC81005C60FB /* YangRtcpCommon.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcpCommon.c; sourceTree = "<group>"; };
+		F70FF4F42995EC81005C60FB /* YangRtcp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcp.h; sourceTree = "<group>"; };
+		F70FF4F52995EC81005C60FB /* YangRtpFUAPayload2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtpFUAPayload2.c; sourceTree = "<group>"; };
+		F70FF4F62995EC81005C60FB /* YangRtcpTWCC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcpTWCC.c; sourceTree = "<group>"; };
+		F70FF4F72995EC81005C60FB /* YangRtcpApp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcpApp.c; sourceTree = "<group>"; };
+		F70FF4F82995EC81005C60FB /* YangRtcpXr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcpXr.h; sourceTree = "<group>"; };
+		F70FF4F92995EC81005C60FB /* YangReceiveNackBuffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangReceiveNackBuffer.c; sourceTree = "<group>"; };
+		F70FF4FA2995EC81005C60FB /* YangRtpSTAPPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtpSTAPPayload.h; sourceTree = "<group>"; };
+		F70FF4FB2995EC81005C60FB /* YangRtcpRpsi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcpRpsi.c; sourceTree = "<group>"; };
+		F70FF4FC2995EC81005C60FB /* YangRtp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtp.c; sourceTree = "<group>"; };
+		F70FF4FD2995EC81005C60FB /* YangRtpFUAPayload.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtpFUAPayload.h; sourceTree = "<group>"; };
+		F70FF4FE2995EC81005C60FB /* YangRtpHeader.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtpHeader.c; sourceTree = "<group>"; };
+		F70FF4FF2995EC81005C60FB /* YangRtcpSR.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcpSR.c; sourceTree = "<group>"; };
+		F70FF5002995EC81005C60FB /* YangRtpPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtpPacket.h; sourceTree = "<group>"; };
+		F70FF5012995EC81005C60FB /* YangRtcpNack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcpNack.h; sourceTree = "<group>"; };
+		F70FF5022995EC81005C60FB /* YangRtcpPli.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcpPli.c; sourceTree = "<group>"; };
+		F70FF5032995EC81005C60FB /* YangRtpRawPayload.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtpRawPayload.c; sourceTree = "<group>"; };
+		F70FF5042995EC81005C60FB /* YangRtcpPsfbCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcpPsfbCommon.h; sourceTree = "<group>"; };
+		F70FF5052995EC81005C60FB /* YangRtpRecvNack.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtpRecvNack.c; sourceTree = "<group>"; };
+		F70FF5062995EC81005C60FB /* YangRtcpRR.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcpRR.c; sourceTree = "<group>"; };
+		F70FF5072995EC81005C60FB /* YangRtcpCompound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcpCompound.h; sourceTree = "<group>"; };
+		F70FF5082995EC81005C60FB /* YangRtcpSli.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcpSli.c; sourceTree = "<group>"; };
+		F70FF5092995EC81005C60FB /* YangRtpBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtpBuffer.h; sourceTree = "<group>"; };
+		F70FF50A2995EC81005C60FB /* YangRtcpBye.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcpBye.c; sourceTree = "<group>"; };
+		F70FF50B2995EC81005C60FB /* YangRtcpCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcpCommon.h; sourceTree = "<group>"; };
+		F70FF50C2995EC81005C60FB /* YangPublishNackBuffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangPublishNackBuffer.c; sourceTree = "<group>"; };
+		F70FF50D2995EC81005C60FB /* YangRtcpXr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcpXr.c; sourceTree = "<group>"; };
+		F70FF50E2995EC81005C60FB /* YangRtcpApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcpApp.h; sourceTree = "<group>"; };
+		F70FF50F2995EC81005C60FB /* YangRtpFUAPayload2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtpFUAPayload2.h; sourceTree = "<group>"; };
+		F70FF5102995EC81005C60FB /* YangRtcpTWCC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcpTWCC.h; sourceTree = "<group>"; };
+		F70FF5112995EC81005C60FB /* YangRtcp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcp.c; sourceTree = "<group>"; };
+		F70FF5132995EC81005C60FB /* YangP2pConnection2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangP2pConnection2.h; sourceTree = "<group>"; };
+		F70FF5142995EC81005C60FB /* YangP2pConnection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangP2pConnection.c; sourceTree = "<group>"; };
+		F70FF5152995EC81005C60FB /* YangP2pServer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangP2pServer.c; sourceTree = "<group>"; };
+		F70FF5162995EC81005C60FB /* YangP2pConnection2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangP2pConnection2.c; sourceTree = "<group>"; };
+		F70FF5172995EC81005C60FB /* YangP2pConnection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangP2pConnection.h; sourceTree = "<group>"; };
+		F70FF5192995EC81005C60FB /* YangConvert.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangConvert.c; sourceTree = "<group>"; };
+		F70FF51A2995EC81005C60FB /* YangPreProcess.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangPreProcess.c; sourceTree = "<group>"; };
+		F70FF51B2995EC81005C60FB /* YangRtcAec.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangRtcAec.c; sourceTree = "<group>"; };
+		F70FF51C2995EC81005C60FB /* YangMeta.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangMeta.c; sourceTree = "<group>"; };
+		F70FF51D2995EC81005C60FB /* YangSpspps.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSpspps.c; sourceTree = "<group>"; };
+		F70FF51E2995EC81005C60FB /* YangAudioMix.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangAudioMix.c; sourceTree = "<group>"; };
+		F70FF51F2995EC81005C60FB /* YangYuvUtil.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangYuvUtil.c; sourceTree = "<group>"; };
+		F70FF5202995EC81005C60FB /* YangResample.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangResample.c; sourceTree = "<group>"; };
+		F70FF5212995EC81005C60FB /* YangNalu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangNalu.c; sourceTree = "<group>"; };
+		F70FF5222995EC81005C60FB /* YangAudioUtil.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangAudioUtil.c; sourceTree = "<group>"; };
+		F70FF5242995EC81005C60FB /* YangDtlsMbedtls.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangDtlsMbedtls.c; sourceTree = "<group>"; };
+		F70FF5252995EC81005C60FB /* YangSslMbedtls.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSslMbedtls.c; sourceTree = "<group>"; };
+		F70FF5262995EC81005C60FB /* YangRtcDtls.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangRtcDtls.h; sourceTree = "<group>"; };
+		F70FF5272995EC81005C60FB /* YangSslOpenssl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSslOpenssl.c; sourceTree = "<group>"; };
+		F70FF5282995EC81005C60FB /* YangDtlsOpenssl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangDtlsOpenssl.c; sourceTree = "<group>"; };
+		F70FF52A2995EC81005C60FB /* YangStreamRtc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangStreamRtc.h; sourceTree = "<group>"; };
+		F70FF52B2995EC81005C60FB /* YangStream.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangStream.c; sourceTree = "<group>"; };
+		F70FF52C2995EC81005C60FB /* YangStreamCapture.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangStreamCapture.c; sourceTree = "<group>"; };
+		F70FF52D2995EC81005C60FB /* YangStreamRtc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangStreamRtc.c; sourceTree = "<group>"; };
+		F70FF5302995EC81005C60FB /* YangVector.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangVector.c; sourceTree = "<group>"; };
+		F70FF5312995EC81005C60FB /* YangFile.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangFile.c; sourceTree = "<group>"; };
+		F70FF5322995EC81005C60FB /* YangLibHandle.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangLibHandle.c; sourceTree = "<group>"; };
+		F70FF5332995EC81005C60FB /* YangHttpSocket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangHttpSocket.c; sourceTree = "<group>"; };
+		F70FF5342995EC81005C60FB /* YangSocket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSocket.c; sourceTree = "<group>"; };
+		F70FF5352995EC81005C60FB /* YangSctp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangSctp.h; sourceTree = "<group>"; };
+		F70FF5362995EC81005C60FB /* YangIni.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangIni.c; sourceTree = "<group>"; };
+		F70FF5372995EC81005C60FB /* YangThread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangThread.c; sourceTree = "<group>"; };
+		F70FF5382995EC81005C60FB /* YangBuffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangBuffer.c; sourceTree = "<group>"; };
+		F70FF5392995EC81005C60FB /* YangAvtype.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangAvtype.c; sourceTree = "<group>"; };
+		F70FF53A2995EC81005C60FB /* YangUrl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangUrl.c; sourceTree = "<group>"; };
+		F70FF53B2995EC81005C60FB /* YangTime.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangTime.c; sourceTree = "<group>"; };
+		F70FF53C2995EC81005C60FB /* YangSRtp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSRtp.c; sourceTree = "<group>"; };
+		F70FF53D2995EC81005C60FB /* YangEndian.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangEndian.c; sourceTree = "<group>"; };
+		F70FF53E2995EC81005C60FB /* YangCTimer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangCTimer.c; sourceTree = "<group>"; };
+		F70FF53F2995EC81005C60FB /* YangSctp.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSctp.c; sourceTree = "<group>"; };
+		F70FF5402995EC81005C60FB /* YangSsrc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSsrc.c; sourceTree = "<group>"; };
+		F70FF5412995EC81005C60FB /* YangCString.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangCString.c; sourceTree = "<group>"; };
+		F70FF5422995EC81005C60FB /* YangAmf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangAmf.c; sourceTree = "<group>"; };
+		F70FF5432995EC81005C60FB /* YangWebsocket.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangWebsocket.c; sourceTree = "<group>"; };
+		F70FF5442995EC81005C60FB /* YangSocketIP.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSocketIP.c; sourceTree = "<group>"; };
+		F70FF5452995EC81005C60FB /* YangMath.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangMath.c; sourceTree = "<group>"; };
+		F70FF5462995EC81005C60FB /* YangCLog.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangCLog.c; sourceTree = "<group>"; };
+		F70FF5482995EC82005C60FB /* YangSortBuffer.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangSortBuffer.c; sourceTree = "<group>"; };
+		F70FF5492995EC82005C60FB /* YangMediaBuffer2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangMediaBuffer2.c; sourceTree = "<group>"; };
+		F70FF54A2995EC82005C60FB /* YangSortBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YangSortBuffer.h; sourceTree = "<group>"; };
+		F70FF54B2995EC82005C60FB /* YangVideoEncoderBuffer2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = YangVideoEncoderBuffer2.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F70FF4742995EBA4005C60FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F70FF46E2995EBA4005C60FB = {
+			isa = PBXGroup;
+			children = (
+				F70FF5182995EC81005C60FB /* yangavutil */,
+				F70FF4A12995EC80005C60FB /* yangice */,
+				F70FF5122995EC81005C60FB /* yangp2p */,
+				F70FF4AA2995EC81005C60FB /* yangrtc */,
+				F70FF4DE2995EC81005C60FB /* yangrtp */,
+				F70FF4892995EC80005C60FB /* yangsdp */,
+				F70FF4DB2995EC81005C60FB /* yangsrs */,
+				F70FF5232995EC81005C60FB /* yangssl */,
+				F70FF5292995EC81005C60FB /* yangstream */,
+				F70FF52E2995EC81005C60FB /* yangutil */,
+				F70FF4862995EC80005C60FB /* yangzlm */,
+				F70FF4782995EBA4005C60FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F70FF4782995EBA4005C60FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F70FF4772995EBA4005C60FB /* libmetartccore6_ios.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F70FF4862995EC80005C60FB /* yangzlm */ = {
+			isa = PBXGroup;
+			children = (
+				F70FF4872995EC80005C60FB /* YangZlmConnection.c */,
+				F70FF4882995EC80005C60FB /* YangZlmConnection.h */,
+			);
+			name = yangzlm;
+			path = ../../libmetartccore6/src/yangzlm;
+			sourceTree = "<group>";
+		};
+		F70FF4892995EC80005C60FB /* yangsdp */ = {
+			isa = PBXGroup;
+			children = (
+				F70FF48A2995EC80005C60FB /* YangMediaDesc.c */,
+				F70FF48B2995EC80005C60FB /* YangSSRCInfo.c */,
+				F70FF48C2995EC80005C60FB /* YangSdp.c */,
+				F70FF48D2995EC80005C60FB /* YangSdpHandle.h */,
+				F70FF48E2995EC80005C60FB /* YangAudioPayload.c */,
+				F70FF48F2995EC80005C60FB /* YangAnswerSdp.c */,
+				F70FF4902995EC80005C60FB /* YangCodecPayload.h */,
+				F70FF4912995EC80005C60FB /* YangRtxPayloadDes.c */,
+				F70FF4922995EC80005C60FB /* YangRtcSdp.c */,
+				F70FF4932995EC80005C60FB /* YangMediaPayloadType.h */,
+				F70FF4942995EC80005C60FB /* YangRedPayload.c */,
+				F70FF4952995EC80005C60FB /* YangSdpType.h */,
+				F70FF4962995EC80005C60FB /* YangSdp.h */,
+				F70FF4972995EC80005C60FB /* YangSSRCInfo.h */,
+				F70FF4982995EC80005C60FB /* YangMediaDesc.h */,
+				F70FF4992995EC80005C60FB /* YangAnswerSdp.h */,
+				F70FF49A2995EC80005C60FB /* YangAudioPayload.h */,
+				F70FF49B2995EC80005C60FB /* YangSdpHandle.c */,
+				F70FF49C2995EC80005C60FB /* YangRtxPayloadDes.h */,
+				F70FF49D2995EC80005C60FB /* YangCodecPayload.c */,
+				F70FF49E2995EC80005C60FB /* YangRedPayload.h */,
+				F70FF49F2995EC80005C60FB /* YangMediaPayloadType.c */,
+				F70FF4A02995EC80005C60FB /* YangRtcSdp.h */,
+			);
+			name = yangsdp;
+			path = ../../libmetartccore6/src/yangsdp;
+			sourceTree = "<group>";
+		};
+		F70FF4A12995EC80005C60FB /* yangice */ = {
+			isa = PBXGroup;
+			children = (
+				F70FF4A22995EC80005C60FB /* YangRtcStun.c */,
+				F70FF4A32995EC80005C60FB /* YangTurnConnection.h */,
+				F70FF4A42995EC80005C60FB /* YangIce.c */,
+				F70FF4A52995EC80005C60FB /* YangRtcSocket.h */,
+				F70FF4A62995EC80005C60FB /* YangTurnConnection.c */,
+				F70FF4A72995EC80005C60FB /* YangRtcStun.h */,
+				F70FF4A82995EC80005C60FB /* YangRtcSocket.c */,
+				F70FF4A92995EC80005C60FB /* YangIce.h */,
+			);
+			name = yangice;
+			path = ../../libmetartccore6/src/yangice;
+			sourceTree = "<group>";
+		};
+		F70FF4AA2995EC81005C60FB /* yangrtc */ = {
+			isa = PBXGroup;
+			children = (
+				F70FF4AB2995EC81005C60FB /* YangPlayTrackAudio.c */,
+				F70FF4AC2995EC81005C60FB /* YangPlayTrackH264.h */,
+				F70FF4AD2995EC81005C60FB /* YangPush.h */,
+				F70FF4AE2995EC81005C60FB /* YangPushStream.h */,
+				F70FF4AF2995EC81005C60FB /* YangBandwidth.c */,
+				F70FF4B02995EC81005C60FB /* YangPushAudio.c */,
+				F70FF4B12995EC81005C60FB /* YangRtcContext.h */,
+				F70FF4B22995EC81005C60FB /* YangPushH265.c */,
+				F70FF4B32995EC81005C60FB /* YangRtcRtcp.h */,
+				F70FF4B42995EC81005C60FB /* YangRtcConnection.c */,
+				F70FF4B52995EC81005C60FB /* YangPlayTrackH265.c */,
+				F70FF4B62995EC81005C60FB /* YangPlayTrackVideo.h */,
+				F70FF4B72995EC81005C60FB /* YangPlayStream.c */,
+				F70FF4B82995EC81005C60FB /* YangPlayTrack.h */,
+				F70FF4B92995EC81005C60FB /* YangPushH264.h */,
+				F70FF4BA2995EC81005C60FB /* YangRtcTwcc.c */,
+				F70FF4BB2995EC81005C60FB /* YangDatachannel.c */,
+				F70FF4BC2995EC81005C60FB /* YangPushH.h */,
+				F70FF4BD2995EC81005C60FB /* YangStreamUrl.h */,
+				F70FF4BE2995EC81005C60FB /* YangRtcStats.h */,
+				F70FF4BF2995EC81005C60FB /* YangPushStream.c */,
+				F70FF4C02995EC81005C60FB /* YangPush.c */,
+				F70FF4C12995EC81005C60FB /* YangPlayTrackH264.c */,
+				F70FF4C22995EC81005C60FB /* YangRtcContextH.h */,
+				F70FF4C32995EC81005C60FB /* YangPlayTrackAudio.h */,
+				F70FF4C42995EC81005C60FB /* YangMetaConnection.c */,
+				F70FF4C52995EC81005C60FB /* YangPushH265.h */,
+				F70FF4C62995EC81005C60FB /* YangPushAudio.h */,
+				F70FF4C72995EC81005C60FB /* YangBandwidth.h */,
+				F70FF4C82995EC81005C60FB /* YangRtcContext.c */,
+				F70FF4C92995EC81005C60FB /* YangPlayStream.h */,
+				F70FF4CA2995EC81005C60FB /* YangPlayTrackH.h */,
+				F70FF4CB2995EC81005C60FB /* YangPlayTrackVideo.c */,
+				F70FF4CC2995EC81005C60FB /* YangPlay.h */,
+				F70FF4CD2995EC81005C60FB /* YangPlayTrackH265.h */,
+				F70FF4CE2995EC81005C60FB /* YangPushStreamH.h */,
+				F70FF4CF2995EC81005C60FB /* YangRtcConnection.h */,
+				F70FF4D02995EC81005C60FB /* YangRtcRtcp.c */,
+				F70FF4D12995EC81005C60FB /* YangPeerConnection.c */,
+				F70FF4D22995EC81005C60FB /* YangRtcStats.c */,
+				F70FF4D32995EC81005C60FB /* YangDatachannel.h */,
+				F70FF4D42995EC81005C60FB /* YangRtcTwcc.h */,
+				F70FF4D52995EC81005C60FB /* YangStreamUrl.c */,
+				F70FF4D62995EC81005C60FB /* YangPlayTrack.c */,
+				F70FF4D72995EC81005C60FB /* YangPushH264.c */,
+				F70FF4D82995EC81005C60FB /* YangAec.c */,
+				F70FF4D92995EC81005C60FB /* YangRtcSession.h */,
+				F70FF4DA2995EC81005C60FB /* YangRtcStream.h */,
+			);
+			name = yangrtc;
+			path = ../../libmetartccore6/src/yangrtc;
+			sourceTree = "<group>";
+		};
+		F70FF4DB2995EC81005C60FB /* yangsrs */ = {
+			isa = PBXGroup;
+			children = (
+				F70FF4DC2995EC81005C60FB /* YangSrsConnection.h */,
+				F70FF4DD2995EC81005C60FB /* YangSrsConnection.c */,
+			);
+			name = yangsrs;
+			path = ../../libmetartccore6/src/yangsrs;
+			sourceTree = "<group>";
+		};
+		F70FF4DE2995EC81005C60FB /* yangrtp */ = {
+			isa = PBXGroup;
+			children = (
+				F70FF4DF2995EC81005C60FB /* YangRtcpNack.c */,
+				F70FF4E02995EC81005C60FB /* YangRtpPacket.c */,
+				F70FF4E12995EC81005C60FB /* YangRtcpSR.h */,
+				F70FF4E22995EC81005C60FB /* YangRtpHeader.h */,
+				F70FF4E32995EC81005C60FB /* YangRtpFUAPayload.c */,
+				F70FF4E42995EC81005C60FB /* YangRtp.h */,
+				F70FF4E52995EC81005C60FB /* YangRtcpRpsi.h */,
+				F70FF4E62995EC81005C60FB /* YangReceiveNackBuffer.h */,
+				F70FF4E72995EC81005C60FB /* YangRtpSTAPPayload.c */,
+				F70FF4E82995EC81005C60FB /* YangRtcpBye.h */,
+				F70FF4E92995EC81005C60FB /* YangRtcpSli.h */,
+				F70FF4EA2995EC81005C60FB /* YangRtpBuffer.c */,
+				F70FF4EB2995EC81005C60FB /* YangRtcpCompound.c */,
+				F70FF4EC2995EC81005C60FB /* YangRtcpPsfbCommon.c */,
+				F70FF4ED2995EC81005C60FB /* YangRtpRawPayload.h */,
+				F70FF4EE2995EC81005C60FB /* YangRtcpPli.h */,
+				F70FF4EF2995EC81005C60FB /* YangRtcpRR.h */,
+				F70FF4F02995EC81005C60FB /* YangRtpRecvNack.h */,
+				F70FF4F12995EC81005C60FB /* YangPublishNackBuffer.h */,
+				F70FF4F22995EC81005C60FB /* YangRtpConstant.h */,
+				F70FF4F32995EC81005C60FB /* YangRtcpCommon.c */,
+				F70FF4F42995EC81005C60FB /* YangRtcp.h */,
+				F70FF4F52995EC81005C60FB /* YangRtpFUAPayload2.c */,
+				F70FF4F62995EC81005C60FB /* YangRtcpTWCC.c */,
+				F70FF4F72995EC81005C60FB /* YangRtcpApp.c */,
+				F70FF4F82995EC81005C60FB /* YangRtcpXr.h */,
+				F70FF4F92995EC81005C60FB /* YangReceiveNackBuffer.c */,
+				F70FF4FA2995EC81005C60FB /* YangRtpSTAPPayload.h */,
+				F70FF4FB2995EC81005C60FB /* YangRtcpRpsi.c */,
+				F70FF4FC2995EC81005C60FB /* YangRtp.c */,
+				F70FF4FD2995EC81005C60FB /* YangRtpFUAPayload.h */,
+				F70FF4FE2995EC81005C60FB /* YangRtpHeader.c */,
+				F70FF4FF2995EC81005C60FB /* YangRtcpSR.c */,
+				F70FF5002995EC81005C60FB /* YangRtpPacket.h */,
+				F70FF5012995EC81005C60FB /* YangRtcpNack.h */,
+				F70FF5022995EC81005C60FB /* YangRtcpPli.c */,
+				F70FF5032995EC81005C60FB /* YangRtpRawPayload.c */,
+				F70FF5042995EC81005C60FB /* YangRtcpPsfbCommon.h */,
+				F70FF5052995EC81005C60FB /* YangRtpRecvNack.c */,
+				F70FF5062995EC81005C60FB /* YangRtcpRR.c */,
+				F70FF5072995EC81005C60FB /* YangRtcpCompound.h */,
+				F70FF5082995EC81005C60FB /* YangRtcpSli.c */,
+				F70FF5092995EC81005C60FB /* YangRtpBuffer.h */,
+				F70FF50A2995EC81005C60FB /* YangRtcpBye.c */,
+				F70FF50B2995EC81005C60FB /* YangRtcpCommon.h */,
+				F70FF50C2995EC81005C60FB /* YangPublishNackBuffer.c */,
+				F70FF50D2995EC81005C60FB /* YangRtcpXr.c */,
+				F70FF50E2995EC81005C60FB /* YangRtcpApp.h */,
+				F70FF50F2995EC81005C60FB /* YangRtpFUAPayload2.h */,
+				F70FF5102995EC81005C60FB /* YangRtcpTWCC.h */,
+				F70FF5112995EC81005C60FB /* YangRtcp.c */,
+			);
+			name = yangrtp;
+			path = ../../libmetartccore6/src/yangrtp;
+			sourceTree = "<group>";
+		};
+		F70FF5122995EC81005C60FB /* yangp2p */ = {
+			isa = PBXGroup;
+			children = (
+				F70FF5132995EC81005C60FB /* YangP2pConnection2.h */,
+				F70FF5142995EC81005C60FB /* YangP2pConnection.c */,
+				F70FF5152995EC81005C60FB /* YangP2pServer.c */,
+				F70FF5162995EC81005C60FB /* YangP2pConnection2.c */,
+				F70FF5172995EC81005C60FB /* YangP2pConnection.h */,
+			);
+			name = yangp2p;
+			path = ../../libmetartccore6/src/yangp2p;
+			sourceTree = "<group>";
+		};
+		F70FF5182995EC81005C60FB /* yangavutil */ = {
+			isa = PBXGroup;
+			children = (
+				F70FF5192995EC81005C60FB /* YangConvert.c */,
+				F70FF51A2995EC81005C60FB /* YangPreProcess.c */,
+				F70FF51B2995EC81005C60FB /* YangRtcAec.c */,
+				F70FF51C2995EC81005C60FB /* YangMeta.c */,
+				F70FF51D2995EC81005C60FB /* YangSpspps.c */,
+				F70FF51E2995EC81005C60FB /* YangAudioMix.c */,
+				F70FF51F2995EC81005C60FB /* YangYuvUtil.c */,
+				F70FF5202995EC81005C60FB /* YangResample.c */,
+				F70FF5212995EC81005C60FB /* YangNalu.c */,
+				F70FF5222995EC81005C60FB /* YangAudioUtil.c */,
+			);
+			name = yangavutil;
+			path = ../../libmetartccore6/src/yangavutil;
+			sourceTree = "<group>";
+		};
+		F70FF5232995EC81005C60FB /* yangssl */ = {
+			isa = PBXGroup;
+			children = (
+				F70FF5242995EC81005C60FB /* YangDtlsMbedtls.c */,
+				F70FF5252995EC81005C60FB /* YangSslMbedtls.c */,
+				F70FF5262995EC81005C60FB /* YangRtcDtls.h */,
+				F70FF5272995EC81005C60FB /* YangSslOpenssl.c */,
+				F70FF5282995EC81005C60FB /* YangDtlsOpenssl.c */,
+			);
+			name = yangssl;
+			path = ../../libmetartccore6/src/yangssl;
+			sourceTree = "<group>";
+		};
+		F70FF5292995EC81005C60FB /* yangstream */ = {
+			isa = PBXGroup;
+			children = (
+				F70FF52A2995EC81005C60FB /* YangStreamRtc.h */,
+				F70FF52B2995EC81005C60FB /* YangStream.c */,
+				F70FF52C2995EC81005C60FB /* YangStreamCapture.c */,
+				F70FF52D2995EC81005C60FB /* YangStreamRtc.c */,
+			);
+			name = yangstream;
+			path = ../../libmetartccore6/src/yangstream;
+			sourceTree = "<group>";
+		};
+		F70FF52E2995EC81005C60FB /* yangutil */ = {
+			isa = PBXGroup;
+			children = (
+				F70FF52F2995EC81005C60FB /* sys */,
+				F70FF5472995EC81005C60FB /* buffer2 */,
+			);
+			name = yangutil;
+			path = ../../libmetartccore6/src/yangutil;
+			sourceTree = "<group>";
+		};
+		F70FF52F2995EC81005C60FB /* sys */ = {
+			isa = PBXGroup;
+			children = (
+				F70FF5302995EC81005C60FB /* YangVector.c */,
+				F70FF5312995EC81005C60FB /* YangFile.c */,
+				F70FF5322995EC81005C60FB /* YangLibHandle.c */,
+				F70FF5332995EC81005C60FB /* YangHttpSocket.c */,
+				F70FF5342995EC81005C60FB /* YangSocket.c */,
+				F70FF5352995EC81005C60FB /* YangSctp.h */,
+				F70FF5362995EC81005C60FB /* YangIni.c */,
+				F70FF5372995EC81005C60FB /* YangThread.c */,
+				F70FF5382995EC81005C60FB /* YangBuffer.c */,
+				F70FF5392995EC81005C60FB /* YangAvtype.c */,
+				F70FF53A2995EC81005C60FB /* YangUrl.c */,
+				F70FF53B2995EC81005C60FB /* YangTime.c */,
+				F70FF53C2995EC81005C60FB /* YangSRtp.c */,
+				F70FF53D2995EC81005C60FB /* YangEndian.c */,
+				F70FF53E2995EC81005C60FB /* YangCTimer.c */,
+				F70FF53F2995EC81005C60FB /* YangSctp.c */,
+				F70FF5402995EC81005C60FB /* YangSsrc.c */,
+				F70FF5412995EC81005C60FB /* YangCString.c */,
+				F70FF5422995EC81005C60FB /* YangAmf.c */,
+				F70FF5432995EC81005C60FB /* YangWebsocket.c */,
+				F70FF5442995EC81005C60FB /* YangSocketIP.c */,
+				F70FF5452995EC81005C60FB /* YangMath.c */,
+				F70FF5462995EC81005C60FB /* YangCLog.c */,
+			);
+			path = sys;
+			sourceTree = "<group>";
+		};
+		F70FF5472995EC81005C60FB /* buffer2 */ = {
+			isa = PBXGroup;
+			children = (
+				F70FF5482995EC82005C60FB /* YangSortBuffer.c */,
+				F70FF5492995EC82005C60FB /* YangMediaBuffer2.c */,
+				F70FF54A2995EC82005C60FB /* YangSortBuffer.h */,
+				F70FF54B2995EC82005C60FB /* YangVideoEncoderBuffer2.c */,
+			);
+			path = buffer2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F70FF4762995EBA4005C60FB /* metartccore6_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F70FF4802995EBA4005C60FB /* Build configuration list for PBXNativeTarget "metartccore6_ios" */;
+			buildPhases = (
+				F70FF4732995EBA4005C60FB /* Sources */,
+				F70FF4742995EBA4005C60FB /* Frameworks */,
+				F70FF4752995EBA4005C60FB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = metartccore6_ios;
+			productName = metartccore6_ios;
+			productReference = F70FF4772995EBA4005C60FB /* libmetartccore6_ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F70FF46F2995EBA4005C60FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					F70FF4762995EBA4005C60FB = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = F70FF4722995EBA4005C60FB /* Build configuration list for PBXProject "metartccore6_ios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F70FF46E2995EBA4005C60FB;
+			productRefGroup = F70FF4782995EBA4005C60FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F70FF4762995EBA4005C60FB /* metartccore6_ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F70FF4732995EBA4005C60FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70FF5622995ED1E005C60FB /* YangConvert.c in Sources */,
+				F70FF5632995ED1E005C60FB /* YangPreProcess.c in Sources */,
+				F70FF5642995ED1E005C60FB /* YangRtcAec.c in Sources */,
+				F70FF5652995ED1E005C60FB /* YangMeta.c in Sources */,
+				F70FF5662995ED1E005C60FB /* YangSpspps.c in Sources */,
+				F70FF5672995ED1E005C60FB /* YangAudioMix.c in Sources */,
+				F70FF5682995ED1E005C60FB /* YangYuvUtil.c in Sources */,
+				F70FF5692995ED1E005C60FB /* YangResample.c in Sources */,
+				F70FF56A2995ED1E005C60FB /* YangNalu.c in Sources */,
+				F70FF56B2995ED1E005C60FB /* YangAudioUtil.c in Sources */,
+				F70FF56C2995ED1E005C60FB /* YangRtcStun.c in Sources */,
+				F70FF56E2995ED1E005C60FB /* YangIce.c in Sources */,
+				F70FF5702995ED1E005C60FB /* YangTurnConnection.c in Sources */,
+				F70FF5722995ED1E005C60FB /* YangRtcSocket.c in Sources */,
+				F70FF5752995ED1E005C60FB /* YangP2pConnection.c in Sources */,
+				F70FF5762995ED1E005C60FB /* YangP2pServer.c in Sources */,
+				F70FF5772995ED1E005C60FB /* YangP2pConnection2.c in Sources */,
+				F70FF5792995ED1E005C60FB /* YangPlayTrackAudio.c in Sources */,
+				F70FF57D2995ED1E005C60FB /* YangBandwidth.c in Sources */,
+				F70FF57E2995ED1E005C60FB /* YangPushAudio.c in Sources */,
+				F70FF5802995ED1E005C60FB /* YangPushH265.c in Sources */,
+				F70FF5822995ED1E005C60FB /* YangRtcConnection.c in Sources */,
+				F70FF5832995ED1E005C60FB /* YangPlayTrackH265.c in Sources */,
+				F70FF5852995ED1E005C60FB /* YangPlayStream.c in Sources */,
+				F70FF5882995ED1E005C60FB /* YangRtcTwcc.c in Sources */,
+				F70FF5892995ED1E005C60FB /* YangDatachannel.c in Sources */,
+				F70FF58D2995ED1E005C60FB /* YangPushStream.c in Sources */,
+				F70FF58E2995ED1E005C60FB /* YangPush.c in Sources */,
+				F70FF58F2995ED1E005C60FB /* YangPlayTrackH264.c in Sources */,
+				F70FF5922995ED1E005C60FB /* YangMetaConnection.c in Sources */,
+				F70FF5962995ED1E005C60FB /* YangRtcContext.c in Sources */,
+				F70FF5992995ED1E005C60FB /* YangPlayTrackVideo.c in Sources */,
+				F70FF59E2995ED1E005C60FB /* YangRtcRtcp.c in Sources */,
+				F70FF59F2995ED1E005C60FB /* YangPeerConnection.c in Sources */,
+				F70FF5A02995ED1E005C60FB /* YangRtcStats.c in Sources */,
+				F70FF5A32995ED1E005C60FB /* YangStreamUrl.c in Sources */,
+				F70FF5A42995ED1E005C60FB /* YangPlayTrack.c in Sources */,
+				F70FF5A52995ED1E005C60FB /* YangPushH264.c in Sources */,
+				F70FF5A62995ED1E005C60FB /* YangAec.c in Sources */,
+				F70FF5A92995ED1E005C60FB /* YangRtcpNack.c in Sources */,
+				F70FF5AA2995ED1E005C60FB /* YangRtpPacket.c in Sources */,
+				F70FF5AD2995ED1E005C60FB /* YangRtpFUAPayload.c in Sources */,
+				F70FF5B12995ED1E005C60FB /* YangRtpSTAPPayload.c in Sources */,
+				F70FF5B42995ED1E005C60FB /* YangRtpBuffer.c in Sources */,
+				F70FF5B52995ED1E005C60FB /* YangRtcpCompound.c in Sources */,
+				F70FF5B62995ED1E005C60FB /* YangRtcpPsfbCommon.c in Sources */,
+				F70FF5BD2995ED1E005C60FB /* YangRtcpCommon.c in Sources */,
+				F70FF5BF2995ED1E005C60FB /* YangRtpFUAPayload2.c in Sources */,
+				F70FF5C02995ED1E005C60FB /* YangRtcpTWCC.c in Sources */,
+				F70FF5C12995ED1E005C60FB /* YangRtcpApp.c in Sources */,
+				F70FF5C32995ED1E005C60FB /* YangReceiveNackBuffer.c in Sources */,
+				F70FF5C52995ED1E005C60FB /* YangRtcpRpsi.c in Sources */,
+				F70FF5C62995ED1E005C60FB /* YangRtp.c in Sources */,
+				F70FF5C82995ED1E005C60FB /* YangRtpHeader.c in Sources */,
+				F70FF5C92995ED1E005C60FB /* YangRtcpSR.c in Sources */,
+				F70FF5CC2995ED1E005C60FB /* YangRtcpPli.c in Sources */,
+				F70FF5CD2995ED1E005C60FB /* YangRtpRawPayload.c in Sources */,
+				F70FF5CF2995ED1E005C60FB /* YangRtpRecvNack.c in Sources */,
+				F70FF5D02995ED1E005C60FB /* YangRtcpRR.c in Sources */,
+				F70FF5D22995ED1E005C60FB /* YangRtcpSli.c in Sources */,
+				F70FF5D42995ED1E005C60FB /* YangRtcpBye.c in Sources */,
+				F70FF5D62995ED1E005C60FB /* YangPublishNackBuffer.c in Sources */,
+				F70FF5D72995ED1E005C60FB /* YangRtcpXr.c in Sources */,
+				F70FF5DB2995ED1E005C60FB /* YangRtcp.c in Sources */,
+				F70FF5DC2995ED1E005C60FB /* YangMediaDesc.c in Sources */,
+				F70FF5DD2995ED1E005C60FB /* YangSSRCInfo.c in Sources */,
+				F70FF5DE2995ED1E005C60FB /* YangSdp.c in Sources */,
+				F70FF5E02995ED1E005C60FB /* YangAudioPayload.c in Sources */,
+				F70FF5E12995ED1E005C60FB /* YangAnswerSdp.c in Sources */,
+				F70FF5E32995ED1E005C60FB /* YangRtxPayloadDes.c in Sources */,
+				F70FF5E42995ED1E005C60FB /* YangRtcSdp.c in Sources */,
+				F70FF5E62995ED1E005C60FB /* YangRedPayload.c in Sources */,
+				F70FF5ED2995ED1E005C60FB /* YangSdpHandle.c in Sources */,
+				F70FF5EF2995ED1E005C60FB /* YangCodecPayload.c in Sources */,
+				F70FF5F12995ED1E005C60FB /* YangMediaPayloadType.c in Sources */,
+				F70FF5F42995ED1E005C60FB /* YangSrsConnection.c in Sources */,
+				F70FF5F52995ED1E005C60FB /* YangDtlsMbedtls.c in Sources */,
+				F70FF5F82995ED1E005C60FB /* YangSslOpenssl.c in Sources */,
+				F70FF5F92995ED1E005C60FB /* YangDtlsOpenssl.c in Sources */,
+				F70FF5FB2995ED1E005C60FB /* YangStream.c in Sources */,
+				F70FF5FC2995ED1E005C60FB /* YangStreamCapture.c in Sources */,
+				F70FF5FD2995ED1E005C60FB /* YangStreamRtc.c in Sources */,
+				F70FF5FF2995ED1E005C60FB /* YangSortBuffer.c in Sources */,
+				F70FF6002995ED1E005C60FB /* YangMediaBuffer2.c in Sources */,
+				F70FF6022995ED1E005C60FB /* YangVideoEncoderBuffer2.c in Sources */,
+				F70FF6032995ED1E005C60FB /* YangZlmConnection.c in Sources */,
+				F70FF54C2995ECDE005C60FB /* YangVector.c in Sources */,
+				F70FF54D2995ECDE005C60FB /* YangFile.c in Sources */,
+				F70FF54E2995ECDE005C60FB /* YangLibHandle.c in Sources */,
+				F70FF54F2995ECDE005C60FB /* YangHttpSocket.c in Sources */,
+				F70FF5502995ECDE005C60FB /* YangSocket.c in Sources */,
+				F70FF5512995ECDE005C60FB /* YangIni.c in Sources */,
+				F70FF5522995ECDE005C60FB /* YangThread.c in Sources */,
+				F70FF5532995ECDE005C60FB /* YangBuffer.c in Sources */,
+				F70FF5542995ECDE005C60FB /* YangAvtype.c in Sources */,
+				F70FF5552995ECDE005C60FB /* YangUrl.c in Sources */,
+				F70FF5562995ECDE005C60FB /* YangTime.c in Sources */,
+				F70FF5572995ECDE005C60FB /* YangSRtp.c in Sources */,
+				F70FF5582995ECDE005C60FB /* YangEndian.c in Sources */,
+				F70FF5592995ECDE005C60FB /* YangCTimer.c in Sources */,
+				F70FF55A2995ECDE005C60FB /* YangSctp.c in Sources */,
+				F70FF55B2995ECDE005C60FB /* YangSsrc.c in Sources */,
+				F70FF60729962794005C60FB /* YangSslMbedtls.c in Sources */,
+				F70FF55C2995ECDE005C60FB /* YangCString.c in Sources */,
+				F70FF55D2995ECDE005C60FB /* YangAmf.c in Sources */,
+				F70FF55E2995ECDE005C60FB /* YangWebsocket.c in Sources */,
+				F70FF55F2995ECDE005C60FB /* YangSocketIP.c in Sources */,
+				F70FF5602995ECDE005C60FB /* YangMath.c in Sources */,
+				F70FF5612995ECDE005C60FB /* YangCLog.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F70FF47E2995EBA4005C60FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F70FF47F2995EBA4005C60FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F70FF4812995EBA4005C60FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN5NVGKFM4;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					../../include,
+					../../include/yangaudiodev,
+					../../include/yangavutil,
+					../../include/yangcapture,
+					../../include/yangdecoder,
+					../../include/yangencoder,
+					../../include/yangipc,
+					../../include/yangp2p,
+					../../include/yangplayer,
+					../../include/yangpush,
+					../../include/yangrecord,
+					../../include/yangrtc,
+					../../include/yangssl,
+					../../include/yangstream,
+					../../include/yangtrace,
+					../../include/yangutil,
+					../../thirdparty/include,
+					../../thirdparty/include/libwebsockets,
+					../../thirdparty/user_include,
+					../../thirdparty/user_include/gmssl,
+					../src,
+					../src/yangavutil,
+					../src/yangice,
+					../src/yangp2p,
+					../src/yangrtc,
+					../src/yangrtp,
+					../src/yangsdp,
+					../src/yangsrs,
+					../src/yangssl,
+					../src/yangstream,
+					../src/yangutil/sys,
+					../src/yangutil/buffer2,
+					../src/yangzlm,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		F70FF4822995EBA4005C60FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DN5NVGKFM4;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				HEADER_SEARCH_PATHS = (
+					../../include,
+					../../include/yangaudiodev,
+					../../include/yangavutil,
+					../../include/yangcapture,
+					../../include/yangdecoder,
+					../../include/yangencoder,
+					../../include/yangipc,
+					../../include/yangp2p,
+					../../include/yangplayer,
+					../../include/yangpush,
+					../../include/yangrecord,
+					../../include/yangrtc,
+					../../include/yangssl,
+					../../include/yangstream,
+					../../include/yangtrace,
+					../../include/yangutil,
+					../../thirdparty/include,
+					../../thirdparty/include/libwebsockets,
+					../../thirdparty/user_include,
+					../../thirdparty/user_include/gmssl,
+					../src,
+					../src/yangavutil,
+					../src/yangice,
+					../src/yangp2p,
+					../src/yangrtc,
+					../src/yangrtp,
+					../src/yangsdp,
+					../src/yangsrs,
+					../src/yangssl,
+					../src/yangstream,
+					../src/yangutil/sys,
+					../src/yangutil/buffer2,
+					../src/yangzlm,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F70FF4722995EBA4005C60FB /* Build configuration list for PBXProject "metartccore6_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70FF47E2995EBA4005C60FB /* Debug */,
+				F70FF47F2995EBA4005C60FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F70FF4802995EBA4005C60FB /* Build configuration list for PBXNativeTarget "metartccore6_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F70FF4812995EBA4005C60FB /* Debug */,
+				F70FF4822995EBA4005C60FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F70FF46F2995EBA4005C60FB /* Project object */;
+}
