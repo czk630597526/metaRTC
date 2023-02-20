@@ -27,10 +27,13 @@
 		#else
 			#define yang_be32toh be32toh
 		#endif
+		#define YANG_NO_SIGNAL SO_NOSIGPIPE
+	#else
+		#define YANG_NO_SIGNAL MSG_NOSIGNAL
 	#endif
+#define yang_be32toh be32toh
 #define yang_poll poll
 #define GetSockError()	errno
-#define YANG_NO_SIGNAL MSG_NOSIGNAL
 #define SetSockError(e)	errno = e
 #endif
 

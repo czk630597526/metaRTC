@@ -5,7 +5,6 @@
 #include <yangutil/sys/YangTime.h>
 #include <yangutil/sys/YangLog.h>
 
-
 #if !Yang_Enable_Timer_Phtread
 #ifdef _WIN32
 void  CALLBACK g_yang_TimeEvent(PVOID user, BOOLEAN TimerOrWaitFired2)
@@ -46,8 +45,8 @@ void yang_create_timer(YangCTimer *timer, void *user, int32_t taskId,
 		int32_t waitTime) {
 	if (timer == NULL)
 		return;
-	timer->isloop = 0;
-	timer->isStart = 0;
+	timer->isloop = yangfalse;
+	timer->isStart = yangfalse;
 	timer->waitState = 0;
 	timer->waitTime = waitTime;
 #if Yang_Enable_Timer_Phtread
@@ -80,8 +79,8 @@ void yang_destroy_timer(YangCTimer *timer) {
 }
 void* yang_run_timer_thread(void *obj) {
 	YangCTimer *timer = (YangCTimer*) obj;
-	timer->isStart = 1;
-	timer->isloop = 1;
+	timer->isStart = yangtrue;
+	timer->isloop = yangtrue;
 #if Yang_Enable_Timer_Phtread
     struct timespec outtime;
     struct timeval now;
@@ -111,7 +110,6 @@ void* yang_run_timer_thread(void *obj) {
     CloseHandle(timer->winEvent);
     timer->winEvent=NULL;
 	#elif __APPLE__
-		
     #else
 	struct itimerspec itimer;
 	itimer.it_value.tv_sec = timer->waitTime / 1000;
@@ -154,11 +152,11 @@ void* yang_run_timer_thread(void *obj) {
     #endif
 
 #endif
-	timer->isStart = 0;
+	timer->isStart = yangfalse;
 	return NULL;
 }
 void yang_timer_start(YangCTimer *timer) {
-	if (timer == NULL||timer->isStart==1)
+	if (timer == NULL||timer->isStart)
 		return;
 	if (yang_thread_create(&timer->threadId, 0, yang_run_timer_thread, timer)) {
 		yang_error("YangThread::start could not start thread");
@@ -174,10 +172,10 @@ void yang_timer_start(YangCTimer *timer) {
 #endif
 }
 void yang_timer_stop(YangCTimer *timer) {
-	if (timer == NULL||timer->isStart==0)
+	if (timer == NULL||!timer->isStart)
 		return;
 	if (timer->isStart) {
-		timer->isloop = 0;
+		timer->isloop = yangfalse;
 
 #if Yang_Enable_Timer_Phtread
     if(timer->waitState){
